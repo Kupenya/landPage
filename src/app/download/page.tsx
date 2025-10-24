@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { motion } from "framer-motion";
 import {
   Download,
@@ -12,7 +12,7 @@ import {
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
-export default function DownloadPage() {
+function DownloadPageContent() {
   const [isValid, setIsValid] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [downloadCount, setDownloadCount] = useState(0);
@@ -254,5 +254,22 @@ export default function DownloadPage() {
         </motion.div>
       </div>
     </div>
+  );
+}
+
+export default function DownloadPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-gradient-to-br from-[#073D93] via-[#0D60D8] to-[#1781FF] flex items-center justify-center">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white mx-auto mb-4"></div>
+            <p className="text-white text-lg">Loading...</p>
+          </div>
+        </div>
+      }
+    >
+      <DownloadPageContent />
+    </Suspense>
   );
 }
