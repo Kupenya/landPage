@@ -62,7 +62,7 @@ export async function POST(request: NextRequest) {
     // In a real implementation, you would serve an actual PDF file
     const pdfContent = createSamplePDF();
 
-    return new NextResponse(pdfContent, {
+    return new NextResponse(new Uint8Array(pdfContent), {
       status: 200,
       headers: {
         "Content-Type": "application/pdf",
