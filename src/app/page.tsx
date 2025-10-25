@@ -264,7 +264,7 @@ export default function Home() {
                 href="#pricing"
                 className="text-[#073D93] hover:text-[#0D60D8] transition-colors text-sm lg:text-base"
               >
-                Pricing
+                Value
               </a>
               <button
                 onClick={() =>
@@ -319,7 +319,7 @@ export default function Home() {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block text-[#073D93] hover:text-[#0D60D8] transition-colors py-2 text-base font-medium"
                 >
-                  Pricing
+                  Value
                 </a>
                 <button
                   onClick={() => {
@@ -740,6 +740,188 @@ export default function Home() {
                 </span>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Proposition Section */}
+      <section id="pricing" className="py-16 sm:py-20 lg:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-3 sm:px-4 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="inline-flex items-center px-3 sm:px-4 py-2 bg-green-100 text-green-800 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6"
+            >
+              <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
+              <span className="hidden xs:inline">
+                Free Forever • Rich in Value
+              </span>
+              <span className="xs:hidden">Free & Valuable</span>
+            </motion.div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#073D93] mb-4 sm:mb-6">
+              Get Access to $2,000+ Worth of Storytelling Value
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-[#4B5563] max-w-3xl mx-auto px-4">
+              Everything you need to transform your business storytelling. No
+              hidden costs, no upsells, just pure value.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+            {/* What You Get */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="lg:col-span-2 bg-gradient-to-br from-[#073D93] to-[#0D60D8] rounded-xl sm:rounded-2xl p-6 sm:p-8 text-white"
+            >
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
+                What You Get (Worth $2,000+)
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-sm sm:text-base">
+                      Complete Framework Guide
+                    </div>
+                    <div className="text-xs sm:text-sm text-blue-200">
+                      $497 value
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-sm sm:text-base">
+                      5 Story Templates
+                    </div>
+                    <div className="text-xs sm:text-sm text-blue-200">
+                      $297 value
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-sm sm:text-base">
+                      Real Case Studies
+                    </div>
+                    <div className="text-xs sm:text-sm text-blue-200">
+                      $397 value
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-sm sm:text-base">
+                      Implementation Guide
+                    </div>
+                    <div className="text-xs sm:text-sm text-blue-200">
+                      $297 value
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-sm sm:text-base">
+                      Community Access
+                    </div>
+                    <div className="text-xs sm:text-sm text-blue-200">
+                      $197 value
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-sm sm:text-base">
+                      Bonus Resources
+                    </div>
+                    <div className="text-xs sm:text-sm text-blue-200">
+                      $297 value
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Pricing Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="bg-white border-2 border-[#1781FF] rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center relative overflow-hidden"
+            >
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#1781FF] rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-xs">FREE</span>
+              </div>
+
+              <div className="mb-6">
+                <div className="text-4xl sm:text-5xl font-bold text-[#073D93] mb-2">
+                  $0
+                </div>
+                <div className="text-lg text-[#4B5563] mb-4">
+                  <span className="line-through text-gray-400">$2,000+</span>{" "}
+                  Free Today
+                </div>
+                <p className="text-sm text-[#4B5563]">
+                  Get instant access to everything. No credit card required.
+                </p>
+              </div>
+
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center text-sm text-green-600">
+                  <CheckCircle className="w-4 h-4 mr-2" />
+                  <span>Instant download</span>
+                </div>
+                <div className="flex items-center text-sm text-green-600">
+                  <CheckCircle className="w-4 h-4 mr-2" />
+                  <span>No hidden costs</span>
+                </div>
+                <div className="flex items-center text-sm text-green-600">
+                  <CheckCircle className="w-4 h-4 mr-2" />
+                  <span>Lifetime access</span>
+                </div>
+              </div>
+
+              <button
+                onClick={() =>
+                  document
+                    .getElementById("hero")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                className="w-full bg-gradient-to-r from-[#0D60D8] to-[#1781FF] text-white font-semibold py-3 sm:py-4 px-4 rounded-xl hover:from-[#1781FF] hover:to-[#0D60D8] transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base"
+              >
+                Get Access Now
+              </button>
+            </motion.div>
+          </div>
+
+          {/* Trust Indicators */}
+          <div className="text-center">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-[#4B5563]">
+              <div className="flex items-center">
+                <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                  <CheckCircle className="w-4 h-4 text-green-600" />
+                </div>
+                <span>2,500+ entrepreneurs trust us</span>
+              </div>
+              <div className="flex items-center">
+                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                  <Trophy className="w-4 h-4 text-blue-600" />
+                </div>
+                <span>40% average conversion increase</span>
+              </div>
+              <div className="flex items-center">
+                <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3">
+                  <Star className="w-4 h-4 text-purple-600" />
+                </div>
+                <span>4.9/5 average rating</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
