@@ -58,8 +58,6 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Token expired" }, { status: 410 });
     }
 
-    // For now, we'll create a simple PDF content
-    // In a real implementation, you would serve an actual PDF file
     const pdfContent = createSamplePDF();
 
     return new NextResponse(new Uint8Array(pdfContent), {
